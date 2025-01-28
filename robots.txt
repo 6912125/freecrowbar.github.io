@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /ass/*
+
+Sitemap: https://freecrowbar.com/sitemap.xml
