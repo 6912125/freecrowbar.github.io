@@ -2,25 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreeCrowbar - Get Your FREE Crowbar NOW!!!</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Get your free crowbar today! We offer free crowbars with no strings attached, just fill out the form.">
+    <meta name="keywords" content="free crowbar, crowbar, tool, freebie, giveaway, home improvement">
+    <meta name="author" content="FreeCrowbar">
     <style>
         body {
             background-color: #ff6666; /* Hideously pink */
-            font-family: 'Comic Sans MS', cursive;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
             color: #0000ff; /* Bright blue text */
-            text-align: center;
             padding: 20px;
+            text-align: center;
         }
         h1 {
-            font-size: 4em;
+            font-size: 2.5em; /* Reduced size for mobile */
             text-shadow: 2px 2px #00ff00; /* Green text shadow, because why not? */
+            margin-bottom: 0.5em;
         }
         form {
             background: #ffff00; /* Bright yellow */
             border: 5px dashed #ff00ff; /* Purple dashed border */
             padding: 20px;
             margin: 20px auto;
-            width: 50%;
+            width: 90%; /* Full width on mobile */
+            max-width: 500px; /* Limit width on larger screens */
         }
         input, textarea {
             width: 100%;
@@ -28,6 +35,7 @@
             padding: 5px;
             margin: 10px 0;
             background-color: #ccffcc; /* Light green */
+            box-sizing: border-box; /* Ensure padding doesn't affect width */
         }
         #submit {
             background: #00ff00; /* Green button */
@@ -36,6 +44,7 @@
             border: none;
             padding: 10px 20px;
             cursor: pointer;
+            width: 100%;
         }
         #submit:hover {
             background: #ff0000; /* Red on hover, just to be confusing */
@@ -45,8 +54,44 @@
             color: #800080; /* Purple, because copyrights are fancy */
             position: fixed;
             bottom: 0;
+            left: 0;
             width: 100%;
             background: #ffffff; /* White background */
+            padding: 5px 0;
+        }
+        .testimonial {
+            background: #e6e6fa; /* Lavender background for testimonials */
+            border: 2px solid #8a2be2; /* Blue violet border */
+            margin: 10px auto;
+            padding: 10px;
+            width: 90%; /* Full width on mobile */
+            max-width: 500px; /* Limit width on larger screens */
+            text-align: left;
+        }
+        .testimonial img {
+            width: 30%; /* Smaller images */
+            height: auto;
+            float: left;
+            margin-right: 10px;
+        }
+        .testimonial p {
+            margin-left: 35%; /* Adjust based on image width */
+        }
+        .testimonial .name {
+            font-weight: bold;
+        }
+
+        /* Media Query for responsiveness */
+        @media (min-width: 600px) {
+            h1 {
+                font-size: 4em;
+            }
+            form, .testimonial {
+                width: 50%; /* Adjust width for larger screens */
+            }
+            .testimonial img {
+                max-width: 100px; /* Ensure images don't get too big on wider screens */
+            }
         }
     </style>
 </head>
@@ -71,8 +116,34 @@
         <input type="submit" id="submit" value="GET MY CROWBAR NOW!">
     </form>
 
+    <!-- Testimonials Section -->
+    <div class="testimonial">
+        <img src="https://freecrowbar.com/ass/1.jpg" alt="Juanita Meatspit">
+        <p><span class="name">Juanita Meatspit</span> - Cleveland, FL<br>"They really sent me a free crowbar, it smells a little like dookie but thats ok."</p>
+    </div>
+    <div class="testimonial">
+        <img src="https://freecrowbar.com/ass/2.jpg" alt="Fat Mike">
+        <p><span class="name">Fat Mike</span> - Westhamptonshiresfield, MA<br>"I struggled with the form so I Emailed their support team and Quandarius was happy to help me. 3 minutes later I got my free crow bar, I'm not sure how they managed to fit this bigass crowbar in that little package though."</p>
+    </div>
+    <div class="testimonial">
+        <img src="https://freecrowbar.com/ass/3.jpg" alt="Uncle Brenda">
+        <p><span class="name">Uncle Brenda</span> - Melber, KY<br>"man what the fuck is this shit man. they sent me a crowbar made of PLASTIC. what the fuck am i gonna do with a plastic crowbar. this website is run by bozos."</p>
+    </div>
+    <div class="testimonial">
+        <img src="https://freecrowbar.com/ass/4.jpg" alt="Noah Veil">
+        <p><span class="name">Noah Veil</span> - Normal, IL<br>"i didnt get nothin."</p>
+    </div>
+    <div class="testimonial">
+        <img src="https://freecrowbar.com/ass/5.jpg" alt="José Sanchez">
+        <p><span class="name">José Sanchez</span> - Los Pendejos, TX<br>"They sent me two packets of hot sauce, this is so racist."</p>
+    </div>
+    <div class="testimonial">
+        <img src="https://freecrowbar.com/ass/6.jpg" alt="Clovis Kunkler">
+        <p><span class="name">Clovis Kunkler</span> - Lakewood, FL<br>"I AM CONFUSED IS THIS SOME KIND OF THREAT WHY WOULD THEY SEND THIS I WILL CALL THE ATTORNEY GENERAL."</p>
+    </div>
+
     <div class="copyright">
-        cOPYRIGHT &copy; 2025 FreeCrowbar.com - All rights reserved
+        cOPYRIGHT © 2025 FreeCrowbar.com - All rights reserved
     </div>
 </body>
-</html> 
+</html>
